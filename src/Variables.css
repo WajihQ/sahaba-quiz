@@ -1,0 +1,17 @@
+:root {
+    --button-text-color: #FFFFFF;
+    --button-color: #FF5F1F;
+    --button-border-color: #DB4D0F;
+    --button-hover-color: #0408E0;
+
+    --circular-button-radius: 50%;
+    --circular-button-padding: 24px;
+
+    --rectangular-button-radius: 8px;
+    --rectangular-button-padding: 32px 48px;
+
+    --font-size-x-large: 40px;
+    --font-size-large: 28px;
+    --font-size-medium: 20px;
+    --font-size-small: 16px;
+}

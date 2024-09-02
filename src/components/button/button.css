@@ -1,0 +1,24 @@
+@import "../../Variables.css";
+
+.rectangular_button, .circular_button {
+    background-color: var(--button-color);
+    border-color: var(--button-border-color);
+    color: var(--button-text-color);
+}
+
+.rectangular_button:hover, .circular_button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.rectangular_button { 
+    border-radius: var(--rectangular-button-radius);
+    padding: var(--rectangular-button-padding);
+    color: var(--button-text-color);
+    font-size: var(--font-size-large);
+    
+}
+
+.circular_button {
+    border-radius: var(--circular-button-radius);
+    padding: var(--circular-button-padding);
+}
