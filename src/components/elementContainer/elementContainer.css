@@ -1,0 +1,7 @@
+@import "../../Variables.css";
+
+.element_container {
+    color: var(--element-container-color);
+    border-color: var(--element-container-border-color);
+    border-radius: var(--rectangular-button-radius);
+}
