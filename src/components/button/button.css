@@ -1,5 +1,9 @@
 @import "../../Variables.css";
 
+.element_container .rectangular_button {
+    margin: 5px 0px;
+}
+
 .rectangular_button, .circular_button {
     background-color: var(--button-color);
     border-color: var(--button-border-color);

@@ -1,7 +1,11 @@
 @import "../../Variables.css";
 
 .element_container {
-    color: var(--element-container-color);
-    border-color: var(--element-container-border-color);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--element-container-color);
+    border: 5px solid var(--element-container-border-color);
     border-radius: var(--rectangular-button-radius);
+    margin: auto;
+    padding: 48px 96px;
 }
