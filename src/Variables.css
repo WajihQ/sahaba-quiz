@@ -1,4 +1,9 @@
 :root {
+    --heading-text-color: #FFFFFF;
+
+    --element-container-color: #E0F7FA;
+    --element-container-border-color: #FF7043;
+
     --button-text-color: #FFFFFF;
     --button-color: #FF5F1F;
     --button-border-color: #DB4D0F;

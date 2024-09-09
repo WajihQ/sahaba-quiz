@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Button from "./components/button/button";
 import { ReactComponent as MusicIcon } from './icons/music.svg';
 import PageContext from "./contexts/pageContext";
+import Home from "./pages/home/Home";
 import './App.css';
 import SitePagesEnum from './pages/sitePagesEnum';
 
@@ -11,7 +12,7 @@ function App() {
 	function navigateToPage(): JSX.Element {
 		switch (activePage) {
 		case SitePagesEnum.Home:
-			return <div></div>;
+			return <Home />;
 		default:
 			return <div></div>
 		}

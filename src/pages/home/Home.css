@@ -1,0 +1,13 @@
+#sqHome {
+    background-color: #00F8A5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sq-h1 {
+    font-size: var(--font-size-x-large);
+    color: var(--heading-text-color);
+}
