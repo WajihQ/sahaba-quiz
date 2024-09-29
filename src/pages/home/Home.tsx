@@ -8,13 +8,19 @@ import "./Home.css";
 
 export default function Home(): JSX.Element {
     const { setActivePage } = useContext(PageContext);
+
+    function navigateToPage(page: SitePagesEnum) {
+        console.log(page);
+        setActivePage(page);
+    };
+
     return (
-        <div id="sqHome">
+        <div id="sqHome" className="sq_background">
             <h1 className="sq-h1">Sahaba Quiz</h1>
             <ElementContainer>
                 <Button variant="rectangular" text="Play" onClick={() => { }}></Button>
                 <Button variant="rectangular" text="Settings" onClick={() => { }}></Button>
-                <Button variant="rectangular" text="About" onClick={() => { }}></Button>
+                <Button variant="rectangular" text="About" onClick={() => navigateToPage(SitePagesEnum.About)}></Button>
             </ElementContainer>
             <Button id="musicButton" variant="circular" onClick={() => { }} icon={<MusicIcon />}></Button>
         </div>

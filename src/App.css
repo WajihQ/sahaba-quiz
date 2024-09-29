@@ -44,6 +44,25 @@
 	height: 24px;
 }
 
+.sq-h1 {
+    font-size: var(--font-size-x-large);
+    color: var(--heading-text-color);
+}
+
+.sq_background {
+    background-color: #00F8A5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sq-h2 {
+	font-size: var(--font-size-large);
+    color: var(--sub-heading-text-color);
+}
+
 #musicButton {
 	margin-right: 90%;
 	margin-bottom: 1%;
