@@ -1,8 +1,7 @@
-import React, { useContext } from 'react';
-import Button from "./components/button/button";
-import { ReactComponent as MusicIcon } from './icons/music.svg';
+import { useContext } from 'react';
 import PageContext from "./contexts/pageContext";
 import Home from "./pages/home/Home";
+import About from "./pages/about/About";
 import './App.css';
 import SitePagesEnum from './pages/sitePagesEnum';
 
@@ -11,20 +10,18 @@ function App() {
 
 	function navigateToPage(): JSX.Element {
 		switch (activePage) {
-		case SitePagesEnum.Home:
-			return <Home />;
-		default:
-			return <div></div>
+			case SitePagesEnum.Home:
+				return <Home />;
+			case SitePagesEnum.About:
+				return <About />;
+			default:
+				return <div></div>
 		}
 	}
 	return (
 		<>
-			{ navigateToPage() }
+			{navigateToPage()}
 		</>
-		// <div className="App">
-		//   <Button variant="rectangular" onClick={() => console.log("hi")} text={"Play!"}></Button>
-		//   <Button variant="circular" onClick={() => {}} icon={<MusicIcon />}></Button>
-		// </div>
 	);
 }
 

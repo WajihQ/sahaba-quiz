@@ -6,8 +6,3 @@
     justify-content: center;
     align-items: center;
 }
-
-.sq-h1 {
-    font-size: var(--font-size-x-large);
-    color: var(--heading-text-color);
-}
