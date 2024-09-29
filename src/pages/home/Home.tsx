@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import SitePagesEnum from "../sitePagesEnum";
 import Button from "../../components/button/button";
 import ElementContainer from "../../components/elementContainer/elementContainer";
 import PageContext from "../../contexts/pageContext";
 import { ReactComponent as MusicIcon } from '../../icons/music.svg';
+import { ReactComponent as MusicIconSlash } from "../../icons/musicslash.svg";
 import "./Home.css";
 
 export default function Home(): JSX.Element {
