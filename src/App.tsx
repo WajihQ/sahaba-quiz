@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import './App.css';
 import SitePagesEnum from './pages/sitePagesEnum';
+import BackgroundAudio from './components/backgroundSound/backgroundSound';
 
 function App() {
 	const { activePage, setActivePage } = useContext(PageContext);
@@ -20,6 +21,7 @@ function App() {
 	}
 	return (
 		<>
+			{<BackgroundAudio />}
 			{navigateToPage()}
 		</>
 	);
