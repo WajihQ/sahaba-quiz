@@ -1,29 +1,19 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext} from 'react';
+import PageContext from '../../contexts/pageContext';
 
 const BackgroundAudio: React.FC = () => {
     const audioRef = useRef<HTMLAudioElement | null>(null);
-    const [isPlaying, setIsPlaying] = useState(false);
+    const { isMusicPlaying } = useContext(PageContext);
 
     useEffect(() => {
-        if (audioRef.current && isPlaying) {
-            audioRef.current.play().catch(error => {
-                console.error("Error playing audio:", error);
-            });
-        }
-    }, [isPlaying]);
-
-    const handleToggleAudio = () => {
         if (audioRef.current) {
-            if (isPlaying) {
-                audioRef.current.pause();
+            if (isMusicPlaying) {
+                audioRef.current.play();
             } else {
-                audioRef.current.play().catch(error => {
-                    console.error("Error playing audio:", error);
-                });
+                audioRef.current.pause();
             }
-            setIsPlaying(!isPlaying);
         }
-    };
+    }, [isMusicPlaying]);
 
     return (
         <>
@@ -31,10 +21,6 @@ const BackgroundAudio: React.FC = () => {
                 <source src="/sounds/nature-birds-ambiance.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
             </audio>
-            {/* Button to toggle audio */}
-            <button onClick={handleToggleAudio}>
-                {isPlaying ? 'Pause Audio' : 'Play Audio'}
-            </button>
         </>
     );
 };
