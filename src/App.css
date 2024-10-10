@@ -65,5 +65,7 @@
 
 #musicButton {
 	margin-right: 90%;
-	margin-bottom: 1%;
+	bottom: 5px;
+	left: 20px;
+	z-index: 10001;
 }

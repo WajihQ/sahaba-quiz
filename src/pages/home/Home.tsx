@@ -22,8 +22,6 @@ export default function Home(): JSX.Element {
                 <Button variant="rectangular" text="Settings" onClick={() => { }}></Button>
                 <Button variant="rectangular" text="About" onClick={() => navigateToPage(SitePagesEnum.About)}></Button>
             </ElementContainer>
-            {<MusicButton />}
-            {/* <Button id="musicButton" variant="circular" onClick={() => { }} icon={<MusicIcon />}></Button> */}
         </div>
     );
 };
