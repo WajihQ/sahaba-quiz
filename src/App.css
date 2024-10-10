@@ -64,6 +64,7 @@
 }
 
 #musicButton {
+	position: fixed;
 	margin-right: 90%;
 	bottom: 5px;
 	left: 20px;
