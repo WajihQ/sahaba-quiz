@@ -4,7 +4,6 @@ import Button from "../../components/button/button";
 import ElementContainer from "../../components/elementContainer/elementContainer";
 import PageContext from "../../contexts/pageContext";
 import "./Home.css";
-import MusicButton from "../../components/musicButton/musicButton";
 
 export default function Home(): JSX.Element {
     const { setActivePage } = useContext(PageContext);
