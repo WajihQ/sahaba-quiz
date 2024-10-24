@@ -32,11 +32,12 @@ export const AudioProvider: React.FC<AudioProviderProps> = ({ children }) => {
         if (backgroundAudioRef.current) {
             if (isMusicPlaying) {
                 backgroundAudioRef.current.play();
+                backgroundAudioRef.current.volume = backgroundAudioVolume;
             } else {
                 backgroundAudioRef.current.pause();
             }
         }
-    }, [isMusicPlaying]);
+    }, [isMusicPlaying, backgroundAudioVolume]);
 
     const playClickSound = () => {
         if (clickAudioRef.current) {

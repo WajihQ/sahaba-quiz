@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import SitePagesEnum from "../sitePagesEnum";
 import Button from "../../components/button/button";
+import Slider from "../../components/slider/slider";
 import ElementContainer from "../../components/elementContainer/elementContainer";
 import PageContext from "../../contexts/pageContext";
 import "./Home.css";
