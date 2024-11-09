@@ -27,7 +27,8 @@ export default function Settings(): JSX.Element{
                 <div id="sqSettings">
                     <h2 className="sq-h2">Settings</h2>
                     <Slider id="sqBgAudioSlider" title="Background Sound" value={ backgroundAudioVolume } onChange={ setBackgroundAudioVolume }></Slider>
-                    <Button id="aboutBackButton" variant="rectangular" onClick={ handleBackButtonClick } text="Go Back"></Button>
+                    <Slider id="sqClickAudioSlider" title="Click Sound" value={ clickAudioVolume } onChange={ setClickAudioVolume }></Slider>
+                    <Button id="settingsBackButton" variant="rectangular" onClick={ handleBackButtonClick } text="Go Back"></Button>
                 </div>
             </ElementContainer>
         </div>
