@@ -1,0 +1,32 @@
+@import "../../Variables.css";
+
+.slider-div {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+    gap: 8px;
+}
+
+input[type="range"] {
+    appearance: none;
+    background-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    position: relative;
+    background-color: #00F8A5;
+    height: 8px;
+    border-radius: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    box-sizing: border-box;
+    appearance: none;
+    position: relative;
+    background-color: var(--button-color);
+    border-radius: 8px;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    translate: 0 -50%;
+}

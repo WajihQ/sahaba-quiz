@@ -3,7 +3,7 @@ import PageContext from "./contexts/pageContext";
 import { AudioProvider } from './contexts/audioContext';
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
-import Settings from './pages/settings/settings';
+import Settings from './pages/settings/Settings';
 import './App.css';
 import SitePagesEnum from './pages/sitePagesEnum';
 import MusicButton from "./components/musicButton/musicButton";

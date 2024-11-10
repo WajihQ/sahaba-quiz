@@ -18,7 +18,7 @@ export default function Home(): JSX.Element {
             <h1 className="sq-h1">Sahaba Quiz</h1>
             <ElementContainer>
                 <Button variant="rectangular" text="Play" onClick={() => { }}></Button>
-                <Button variant="rectangular" text="Settings" onClick={() => { }}></Button>
+                <Button variant="rectangular" text="Settings" onClick={() => navigateToPage(SitePagesEnum.Settings)}></Button>
                 <Button variant="rectangular" text="About" onClick={() => navigateToPage(SitePagesEnum.About)}></Button>
             </ElementContainer>
         </div>
